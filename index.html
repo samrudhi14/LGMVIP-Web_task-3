@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+   
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="heading">
+        <p id="navbar">Student Registration Form</p>
+    </div>
+    <div class="flex-container">
+        <div class="left">
+            <form id="form">
+                <table id="info">
+                    <tr>
+                        <th>Name</th>
+                        <td><input type="text" id="name"></td>
+                    </tr>
+                    <tr>
+                        <th>Email</th>
+                        <td><input type="email" id="email"></td>
+                    </tr>
+                    <tr>
+                        <th>Mobile No.</th>
+                        <td><input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" maxlength="10" id="mob"></td>
+                    </tr>
+                    <tr>
+                        <th>Date of Birth</th>
+                        <td><input type="date" id="date"></td>
+                    </tr>
+                    <tr>
+                        <th>Address</th>
+                        <td><textarea rows="5" cols="25" id="address"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td colspan = 2><center><input type="button" value="Submit" id="entry"></center></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+        <div class="right">
+            <center>
+		        <table id="show" border>
+			        <thead>
+				        <tr>
+					        <th>Name</th>
+                            <th>Email</th>
+                            <th>Mobile No.</th>
+                            <th>Date of Birth</th>
+                            <th>Address</th>
+				        </tr>
+			        </thead>
+		        </table>
+            </center>
+	    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
